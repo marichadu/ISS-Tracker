@@ -36,6 +36,13 @@ This project tracks the real-time location of the International Space Station (I
 - The map will automatically update the ISS location every 3 seconds.
 - Use the layer control on the map to switch between map view and satellite view.
 
+## Resources
+
+- [Leaflet.js Documentation](https://leafletjs.com/)
+- [OpenStreetMap](https://www.openstreetmap.org/)
+- [Esri World Imagery](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9)
+- [ISS Current Location API](http://api.open-notify.org/iss-now.json)
+
 ## License
 
 This project is licensed under the MIT License.
