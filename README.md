@@ -15,7 +15,7 @@ This project tracks the real-time location of the International Space Station (I
 - JavaScript
 - Leaflet.js
 - OpenStreetMap
-- Esri World Imagery
+- Google Maps Satellite View
 
 ## Setup
 
@@ -40,9 +40,5 @@ This project tracks the real-time location of the International Space Station (I
 
 - [Leaflet.js Documentation](https://leafletjs.com/)
 - [OpenStreetMap](https://www.openstreetmap.org/)
-- [Esri World Imagery](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9)
+- [Google Maps](https://www.google.com/maps)
 - [ISS Current Location API](http://api.open-notify.org/iss-now.json)
-
-## License
-
-This project is licensed under the MIT License.
