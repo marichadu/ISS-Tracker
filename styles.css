@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('ressources/iss_back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#coordinates {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+#map {
+    width: 80%;
+    height: 80vh;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
