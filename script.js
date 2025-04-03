@@ -1,4 +1,4 @@
-const apiUrl = 'http://api.open-notify.org/iss-now.json';
+const apiUrl = 'https://api.wheretheiss.at/v1/satellites/25544';
 const issIconUrl = 'ressources/iss.png';
 let map, issMarker;
 
