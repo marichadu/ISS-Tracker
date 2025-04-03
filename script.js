@@ -38,11 +38,21 @@ function initMap() {
 
 // Récupérer les données de localisation de l'ISS
 async function fetchIssLocation() {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    const { latitude, longitude } = data.iss_position;
-    return { latitude: parseFloat(latitude), longitude: parseFloat(longitude) };
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+        const data = await response.json();
+        const latitude = data.latitude;
+        const longitude = data.longitude;
+
+        return { latitude: parseFloat(latitude), longitude: parseFloat(longitude) };
+    } catch (error) {
+        console.error('Fetch error:', error);
+        return { latitude: 0, longitude: 0 }; // Default position in case of an error
+    }
 }
+
 
 // Mettre à jour la localisation de l'ISS sur la carte
 async function updateIssLocation() {
